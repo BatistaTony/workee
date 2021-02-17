@@ -1,9 +1,27 @@
-import { IListFilter } from '@/types/index';
+import { IListFilter, ISalary } from '@/types/index';
 import { CustomListFilter, ListItemsFilter } from './style';
+import { useDispatch } from 'react-redux';
+import { setFieldSeniority, setFieldJobType, setFieldSalary } from './../../store/actions/filter';
 
 const ListFilter = ({ title, items }: IListFilter) => {
-  const handleFilter = field => {
-    alert(field);
+  const dispatch = useDispatch();
+
+  const handleFilter = value => {
+    if (title === 'Job type') {
+      dispatch(setFieldJobType(value));
+    }
+
+    if (title === 'Seniority') {
+      dispatch(setFieldSeniority(value));
+    }
+
+    if (title === 'Salary Range') {
+      dispatch(setFieldSalary(value));
+    }
+  };
+
+  const printSalaryRange = (item: ISalary) => {
+    return `${item.to}$ - ${item.from}$`;
   };
 
   return (
@@ -12,16 +30,16 @@ const ListFilter = ({ title, items }: IListFilter) => {
       <ListItemsFilter className="menu">
         {items.map((item, index) => (
           <li className="item" key={index}>
-            <div className="ant-checkbox-wrapper">
+            <div className="checkbox-wrapper">
               <input
                 type="checkbox"
-                id={item}
-                className="ant-checkbox-input"
+                id={title === 'Salary Range' ? item.from + 'j' : item}
+                className="checkbox-input"
+                name={title === 'Salary Range' ? 'salary' : ''}
                 onClick={() => handleFilter(item)}
-                value=""
               />{' '}
-              <label className="label_" htmlFor={item}>
-                {item}
+              <label className="label_" htmlFor={title === 'Salary Range' ? item.from + 'j' : item}>
+                {title === 'Salary Range' ? printSalaryRange(item) : item}
               </label>
             </div>
             <span className="jobNumbers">50</span>

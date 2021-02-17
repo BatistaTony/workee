@@ -1,5 +1,5 @@
 import { Layout as AntLayout } from 'antd';
-import head from 'next/head';
+import Head from 'next/head';
 
 interface ILayout {
   title?: string;
@@ -10,23 +10,21 @@ const { Content } = AntLayout;
 
 const Layout = ({ title, children }: ILayout) => {
   return (
-    <AntLayout>
-      <head>
+    <AntLayout style={{ backgroundColor: 'transparent', height: 'auto' }}>
+      <Head>
         <title>{title || 'Workeé'}</title>
-      </head>
+      </Head>
 
-      <AntLayout>
-        <Content
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-          }}
-        >
-          {children}
-        </Content>
-      </AntLayout>
+      <Content
+        style={{
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+        }}
+      >
+        {children}
+      </Content>
     </AntLayout>
   );
 };

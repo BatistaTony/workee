@@ -1,9 +1,10 @@
 import { IJob } from '@/types/index';
 
 const initialState: IJob = {
+  id: '',
   company_name: '',
   location: '',
-  jot_title: '',
+  job_title: '',
   description: '',
   overview: '',
   required_skills: [],
@@ -14,6 +15,8 @@ const initialState: IJob = {
     from: 0,
   },
   markets: '',
+  date: '',
+  level: '',
 };
 
 interface IAction {

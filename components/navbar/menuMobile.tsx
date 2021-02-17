@@ -11,16 +11,13 @@ const MenuMobile = () => {
         <DivMenuMobile initial={{ x: -100 }} animate={{ x: 0 }}>
           <div className="simpleWrapper">
             <ul className="ulStyle menuMobile_">
-              <Link href="#first">
+              <Link href="/">
                 <li>Home</li>
               </Link>
-              <Link href="#second">
-                <li>#####</li>
+              <Link href="/">
+                <li>Most Required Tools</li>
               </Link>
-              <Link href="#second">
-                <li>#####</li>
-              </Link>
-              <Link href="#about">
+              <Link href="/about">
                 <li>About</li>
               </Link>
             </ul>

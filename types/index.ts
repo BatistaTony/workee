@@ -9,9 +9,10 @@ export interface ISalary {
 }
 
 export interface IJob {
+  id: string;
   company_name: string;
   location: string;
-  jot_title: string;
+  job_title: string;
   overview: string;
   description: string;
   required_skills: string[];
@@ -19,4 +20,6 @@ export interface IJob {
   job_type: string[];
   salary_range: ISalary;
   markets: string;
+  date: Date | string;
+  level: string;
 }

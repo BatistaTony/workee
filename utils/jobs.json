@@ -1,137 +1,164 @@
 [
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
+    "id": "674964fddgh",
+    "company_name": "TAIKAI",
+    "location": "Usa, Los Angeles, Tony Ville",
+    "job_title": "Front End Engineer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
     "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "job_type": ["Part-time", "Contract"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "Consultant",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Entry Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "id": "674964fddgh656gf",
+    "company_name": "SpaceX",
+    "location": "Marts, Elon Musk",
+    "job_title": "Back End Engineer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["Java", "nodejs", "expressjs", "jwt", "kubernetes"],
+    "advantageSkills": ["React", "Scala", "Android native"],
+    "job_type": ["Part-time", "Remote"],
     "salary_range": {
-      "to": 300,
-      "from": 1500
+      "to": 3000,
+      "from": 10000
     },
-    "markets": "healthcare industry"
+    "markets": "Space",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Senior Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "id": "674964fddghvvv",
+    "company_name": "Met Care",
+    "location": "Angola, Luanda, Vila Alice",
+    "job_title": "Full Stack Developer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components", "nodejs"],
+    "advantageSkills": ["React native", "firebase"],
+    "job_type": ["Full-time", "Contract", "Remote"],
     "salary_range": {
-      "to": 300,
+      "to": 500,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "healthcare industry",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Mid Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "id": "6749eee64fddgh",
+    "company_name": "National Bank of Angola",
+    "location": "Angola, Luanda, Coqueiros",
+    "job_title": "Mobile Developer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["java", "styled-components", "swift", "react native"],
+    "advantageSkills": ["Scala", "express", "Aws"],
+    "job_type": ["Full-time", "Remote"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "Sells",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Senior Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "id": "674964fd46uji0dgh",
+    "company_name": "Google Inc",
+    "location": "Marts, Tony Street",
+    "job_title": "DevOps",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["kubernets", "docker", "linux"],
+    "advantageSkills": ["Go lang"],
+    "job_type": ["Internship", "Part-time"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "software",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Senior Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "id": "674964fdee346ngdgh",
+    "company_name": "WuiApp",
+    "location": "Russia, Moscou, ufa",
+    "job_title": "Mobile Developer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["Java", "android", "react native", "swift", "java", "styled-components"],
+    "advantageSkills": ["Scala", "kubernetes"],
+    "job_type": ["Part-time", "Remote"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "food",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Senior Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "id": "67232dd564964fddgh",
+    "company_name": "Zap Viva",
+    "location": "Uk, Londres",
+    "job_title": "React Consultant",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["Reactjs", "css", "styled-components", "css", "javascript"],
+    "advantageSkills": ["React native", "Scala", "Android native", "typescript"],
+    "job_type": ["Part-time", "Remote"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "Television",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Student Level"
   },
   {
-    "company": "Ceser Devs Mobile",
+    "id": "67422cyi780964fddgh",
+    "company_name": "Ceser Devs Mobile",
     "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
-    "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "job_title": "Database Management",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["Mysql", "MongoDb", "CouchDb"],
+    "advantageSkills": [],
+    "job_type": ["Full-time", "Contract"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "Cars",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Student Level"
   },
   {
-    "company": "Ceser Devs Mobile",
-    "location": "Martes, Tony Ville",
-    "jot_title": "Front End Engineer",
-    "description": "lorem",
-    "overview": "",
-    "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
+    "id": "67496457fgjga4fddgh",
+    "company_name": "Apple",
+    "location": "Usa, California, Silicon Valley",
+    "job_title": "Front End Engineer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "styled-components"],
     "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time"],
+    "job_type": ["Part-time", "Remote", "Contract"],
     "salary_range": {
       "to": 300,
       "from": 1500
     },
-    "markets": "healthcare industry"
+    "markets": "healthcare",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "level": "Mid Level"
   }
 ]

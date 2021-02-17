@@ -10,7 +10,7 @@ const Index = () => {
   return (
     <Layout>
       <Navbar />
-
+      <Hero />
       <MainContent>
         <SearchField />
         <SecContent>

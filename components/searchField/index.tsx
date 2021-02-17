@@ -42,7 +42,7 @@ const SearchField = () => {
     <>
       <FilterMobile />
       <form onSubmit={handleSubmit}>
-        <CustomSearchField>
+        <CustomSearchField id="start">
           <div className="div_wrapper">
             <CustomInput
               name="company_name"

@@ -1,29 +1,71 @@
 import { CustomSearchField, ButtonSearch } from './style';
 import CustomInput from '@/components/input';
 import { SearchOutlined, EnvironmentOutlined } from '@ant-design/icons';
-import { Mentions } from 'antd';
 import SelectSkill from '../filter/selectSkill';
+import { ChangeEvent, useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { setSimpeFilter } from './../../store/actions/filter';
+import FilterMobile from '../filter/filter-mobile';
 
-const { Option } = Mentions;
+interface IState {
+  company_name: string;
+  location: string;
+  skills: string[] | any;
+}
 
 const SearchField = () => {
+  const [state, setState] = useState<IState>({
+    company_name: '',
+    location: '',
+    skills: [],
+  });
+
+  const dispatch = useDispatch();
+
+  const handleSubmit = event => {
+    event.preventDefault();
+  };
+
+  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+    setState({ ...state, [event.target.name]: event.target.value });
+  };
+
+  const handleSelect = selected => {
+    setState({ ...state, skills: selected });
+  };
+
+  const findJob = () => {
+    dispatch(setSimpeFilter(state));
+  };
+
   return (
-    <CustomSearchField>
-      <div className="div_wrapper">
-        <CustomInput
-          name="name"
-          placeholder="job title or company name"
-          icon={<SearchOutlined />}
-        />
-      </div>
-      <div className="div_wrapper">
-        <CustomInput name="name" placeholder="location" icon={<EnvironmentOutlined />} />
-      </div>
-      <div className="div_wrapper">
-        <SelectSkill />
-      </div>
-      <ButtonSearch>Find Job</ButtonSearch>
-    </CustomSearchField>
+    <>
+      <FilterMobile />
+      <form onSubmit={handleSubmit}>
+        <CustomSearchField>
+          <div className="div_wrapper">
+            <CustomInput
+              name="company_name"
+              handleChange={handleChange}
+              placeholder="job title or company name"
+              icon={<SearchOutlined />}
+            />
+          </div>
+          <div className="div_wrapper">
+            <CustomInput
+              name="location"
+              handleChange={handleChange}
+              placeholder="location"
+              icon={<EnvironmentOutlined />}
+            />
+          </div>
+          <div className="div_wrapper">
+            <SelectSkill handleSelect={handleSelect} />
+          </div>
+          <ButtonSearch onClick={findJob}>Find Job</ButtonSearch>
+        </CustomSearchField>
+      </form>
+    </>
   );
 };
 

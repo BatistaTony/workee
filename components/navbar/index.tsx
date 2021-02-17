@@ -1,3 +1,4 @@
+import MenuMobile from './menuMobile';
 import { CustomNavbar, Logo, Menu, MenuItem } from './style';
 
 const Navbar = () => {
@@ -7,9 +8,12 @@ const Navbar = () => {
 
       <Menu>
         <MenuItem active={true}>Home</MenuItem>
-        <MenuItem>Home</MenuItem>
+        <MenuItem>####</MenuItem>
+        <MenuItem>####</MenuItem>
         <MenuItem>About</MenuItem>
       </Menu>
+
+      <MenuMobile />
     </CustomNavbar>
   );
 };

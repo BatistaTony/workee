@@ -1,6 +1,6 @@
 export interface IListFilter {
   title: string;
-  items: Array<string> | Array<ISalary>;
+  items: Array<string> | Array<ISalary> | any;
 }
 
 export interface ISalary {

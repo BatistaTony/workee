@@ -149,7 +149,7 @@ export const ListItemsFilter = styled.ul`
   }
 `;
 
-export const SelectStyled: typeof Select = styled(Select)<SelectProps>`
+export const SelectStyled: typeof Select = styled(Select)<SelectProps<any>>`
   width: 100%;
 
   .ant-select-selector {

@@ -5,7 +5,7 @@ import { SelectProps } from 'antd/lib/select';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 
-export const CustomFilter = styled.div<{ isMobile: boolean }>`
+export const CustomFilter = styled.div<{ isMobile: boolean | undefined }>`
   width: 100%;
   height: auto;
   ${addFlexbox('column', 'center', 'flex-start')}

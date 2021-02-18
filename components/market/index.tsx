@@ -1,24 +1,38 @@
 import { ContainerStyled } from './style';
+import jobs from '@/utils/jobs.json';
+import { useEffect, useState } from 'react';
+import * as R from 'ramda';
 
 const MarketContainer = () => {
-  const areas = [
-    'Front End Engineer',
-    'BackEnd Developer',
-    'DevOps Expert',
-    'Front End Engineer',
-    'BackEnd Developer',
-    'DevOps Expert',
-  ];
+  const [areas, setAreas] = useState<string[]>([]);
+  const [tools, setTools] = useState<string[]>([]);
 
-  const tools = [
-    'Reactjs',
-    'Javascript',
-    'Typescript',
-    'Nodejs',
-    'Reactjs',
-    'Javascript',
-    'Typescript',
-  ];
+  let findDuplicates = arr => arr.filter((item, index) => arr.indexOf(item) != index);
+
+  const getMostRequiredArea = async () => {
+    let areasSaved: string[] = [];
+
+    await jobs.map(job => {
+      areasSaved.push(job.job_title);
+    });
+
+    setAreas([...(new Set(findDuplicates(areasSaved)) as any)]);
+  };
+
+  const getMostRequiredTools = () => {
+    let toolsSaved: string[] = [];
+
+    jobs.map(job => {
+      toolsSaved.push(...job.required_skills);
+    });
+
+    setTools([...(new Set(findDuplicates(toolsSaved)) as any)]);
+  };
+
+  useEffect(() => {
+    getMostRequiredArea();
+    getMostRequiredTools();
+  }, []);
 
   return (
     <ContainerStyled>

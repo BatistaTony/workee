@@ -2,48 +2,43 @@ import { StyledContainer } from './style';
 import { LinkedinFilled, FacebookFilled, TwitterCircleFilled } from '@ant-design/icons';
 import { IJob } from '@/types/index';
 import { printSalaryRange } from '@/utils/index';
+import LastPostedDate from '@/elements/lastPosted';
+import { useRouter } from 'next/router';
+import jobs from '@/utils/jobs.json';
+import { useEffect, useState } from 'react';
+import { Skeleton } from 'antd';
+import CardJob from '../jobs/cardJob';
 
 const JobContainer = () => {
   const cels = ['Remote', 'Seniority Level', 'Job Type', 'Market', 'Salary Range'];
 
-  const job: IJob = {
-    company_name: 'Google Inc',
-    advantageSkills: ['Html', 'basic French', 'Aws', 'Azure', 'Kubernetes'],
+  const [job, setJob] = useState<IJob>({
+    company_name: '',
+    advantageSkills: [],
     date: new Date(),
-    description:
-      'The platform also provide information about the most required area on the market to people see what to study to match perfectly on job that they want or if they are on top with their skills, it can be useful too for people that want change their professional area.',
-    email: 'google.recruitment@gmail.com',
-    id: '6546dfgd6',
-    job_title: 'Front End Engineer',
-    job_type: 'Contract',
-    level: 'Mid Level',
-    location: 'Usa, California',
-    markets: 'software',
-    overview:
-      'Workeé is a platform where everyone can have access to new job opportunities in their area and profession, with this platform people can find the jobs to work on every part of the world in wherever they are.',
+    description: '',
+    email: '',
+    id: '',
+    job_title: '',
+    job_type: '',
+    level: '',
+    location: '',
+    markets: '',
+    overview: '',
     isRemote: false,
-    required_skills: [
-      'Reactjs',
-      'TYpescript',
-      'Css',
-      'Style components',
-      'jira',
-      'cypress',
-      'jest',
-      'React Testing library',
-    ],
+    required_skills: [],
     salary_range: {
-      to: 1500,
-      from: 5000,
+      to: 0,
+      from: 0,
     },
-    website: 'http://www.google.console.com',
+    website: '',
     experience_years: 5,
     social_networks: {
-      facebook: 'http://www.facebook.com',
-      linkDin: 'http://www.linkDin.com',
-      twitter: 'http://www.twitter.com',
+      facebook: '',
+      linkDin: '',
+      twitter: '',
     },
-  };
+  });
 
   const {
     company_name,
@@ -51,10 +46,10 @@ const JobContainer = () => {
     date,
     description,
     email,
-    id,
     job_title,
     job_type,
     level,
+    id,
     location,
     markets,
     overview,
@@ -68,45 +63,74 @@ const JobContainer = () => {
 
   const data = [isRemote ? 'yes' : 'Not', level, job_type, markets, printSalaryRange(salary_range)];
 
+  const router = useRouter();
+
+  useEffect(() => {
+    const jobFounded = jobs.filter((job: IJob) => job.id === router.query.id);
+    setJob(jobFounded[0]);
+  }, [router.query.id]);
+
+  const similarJobs = jobs.filter(job => {
+    const regex = RegExp(`${job_title}`, 'gi');
+
+    if (job.job_title.match(regex) && job.id !== id) {
+      return job;
+    }
+  });
+
   return (
     <StyledContainer>
       <div className="containerSec">
         <div className="cover"></div>
-        <div className="infor">
-          <div className="divWrapper">
-            <h1 className="job_title">{job_title}</h1>
-            <p className="name">
-              {company_name} | <span className="address_">{location}</span>
-            </p>
-          </div>
-
-          <div className="divWrapper">
-            <p className="time_post">3d</p>
-          </div>
-        </div>
-
-        <div className="table_rqr">
-          {cels.map((item, index) => (
-            <div className="cels" key={index}>
-              <p>{item}</p>
+        {company_name.length > 0 && (
+          <div className="infor">
+            <div className="divWrapper">
+              <h1 className="job_title">{job_title}</h1>
+              <p className="name">
+                {company_name} | <span className="address_">{location}</span>
+              </p>
             </div>
-          ))}
 
-          {data.map((item, index) => (
-            <div className="data_" key={index}>
-              <p>{item}</p>
+            <div className="divWrapper">
+              <p className="time_post">
+                <LastPostedDate date={date} />
+              </p>
             </div>
-          ))}
-        </div>
+          </div>
+        )}
 
-        <ul className="mobileTable">
-          {cels.map((item, index) => (
-            <li key={index}>
-              <span>{item}</span>
-              <p>{data[index]}</p>
-            </li>
-          ))}
-        </ul>
+        <Skeleton loading={company_name.length <= 0} active />
+
+        <Skeleton loading={company_name.length <= 0} active />
+
+        <Skeleton loading={company_name.length <= 0} active />
+
+        {company_name.length > 0 && (
+          <div className="table_rqr">
+            {cels.map((item, index) => (
+              <div className="cels" key={index}>
+                <p>{item}</p>
+              </div>
+            ))}
+
+            {data.map((item, index) => (
+              <div className="data_" key={index}>
+                <p>{item}</p>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {company_name.length > 0 && (
+          <ul className="mobileTable">
+            {cels.map((item, index) => (
+              <li key={index}>
+                <span>{item}</span>
+                <p>{data[index]}</p>
+              </li>
+            ))}
+          </ul>
+        )}
 
         {overview && (
           <div className="overview">
@@ -169,33 +193,42 @@ const JobContainer = () => {
           </p>
         </div>
 
-        <div className="links">
-          <h1 className="title">Social Networks</h1>
-          <ul className="networks">
-            {social_networks?.linkDin && (
-              <li>
-                <a href={social_networks?.linkDin} target="_blank">
-                  <LinkedinFilled />
-                </a>
-              </li>
-            )}
-            {social_networks?.twitter && (
-              <li>
-                <a href={social_networks?.twitter} target="_blank">
-                  <TwitterCircleFilled />
-                </a>
-              </li>
-            )}
+        {company_name.length > 0 && (
+          <div className="links">
+            <h1 className="title">Social Networks</h1>
+            <ul className="networks">
+              {social_networks?.linkDin && (
+                <li>
+                  <a href={social_networks?.linkDin} target="_blank">
+                    <LinkedinFilled />
+                  </a>
+                </li>
+              )}
+              {social_networks?.twitter && (
+                <li>
+                  <a href={social_networks?.twitter} target="_blank">
+                    <TwitterCircleFilled />
+                  </a>
+                </li>
+              )}
 
-            {social_networks?.facebook && (
-              <li>
-                <a href={social_networks?.facebook} target="_blank">
-                  <FacebookFilled />
-                </a>
-              </li>
-            )}
-          </ul>
-        </div>
+              {social_networks?.facebook && (
+                <li>
+                  <a href={social_networks?.facebook} target="_blank">
+                    <FacebookFilled />
+                  </a>
+                </li>
+              )}
+            </ul>
+          </div>
+        )}
+      </div>
+
+      <div className="similarJob">
+        <h1 className="title">Similar Jobs</h1>
+        {similarJobs.slice(0, 5).map((job, index) => (
+          <CardJob key={index} job={job} />
+        ))}
       </div>
     </StyledContainer>
   );

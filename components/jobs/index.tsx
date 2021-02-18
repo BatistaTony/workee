@@ -23,8 +23,6 @@ const Jobs = () => {
 
   const filteredJobs = jobs.filter((job, index) => {
     if (isAllFilled()) {
-      console.log('fields');
-
       if (
         (job.location.match(lction) && job.job_title.match(compName)) ||
         job.company_name.match(compName)
@@ -43,12 +41,8 @@ const Jobs = () => {
     } else if (filter.company_name && job.company_name.match(compName)) {
       return job;
     } else if (filter.company_name && job.job_title.match(compName)) {
-      console.log('title');
-
       return job;
     } else if (filter.location && job.location.match(lction)) {
-      console.log('location');
-
       return job;
     } else if (filter.skills.length) {
       const skillJob = job.required_skills;
@@ -69,6 +63,16 @@ const Jobs = () => {
   const checkIfIsFiltering = () => {
     return filter.company_name.length > 0 || filter.location.length > 0 || filter.skills.length > 0;
   };
+
+  useEffect(() => {
+    const h = filteredJobs.filter(job => {
+      const jbtypes = filter.job_type;
+
+      console.log(jbtypes.includes(job.job_type));
+    });
+
+    console.log(h);
+  }, [filter.job_type]);
 
   return (
     <ListJobs>

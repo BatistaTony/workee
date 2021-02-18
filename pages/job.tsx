@@ -9,4 +9,8 @@ const Job = () => {
   );
 };
 
+Job.getInitialProps = async () => {
+  return {};
+};
+
 export default Job;

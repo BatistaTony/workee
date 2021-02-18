@@ -1,10 +1,10 @@
 import { IJob } from '@/types/index';
-import { Skeleton } from 'antd';
+// import { Skeleton } from 'antd';
 import { CardStyled, ButtonApply } from './style';
 import Link from 'next/link';
 
 const CardJob = ({ job }: { job: IJob }) => {
-  const items = [...job.required_skills, ...job.job_type];
+  const items = [...job.required_skills, job.job_type];
 
   return (
     <CardStyled>
@@ -19,6 +19,7 @@ const CardJob = ({ job }: { job: IJob }) => {
       </div>
 
       <ul className="items">
+        {job.isRemote && <li className="item">Remote</li>}
         {items.map((item, index) => (
           <li className="item" key={index}>
             {item}

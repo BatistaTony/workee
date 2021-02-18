@@ -1,3 +1,4 @@
+import { IFilterState } from '@/types/index';
 import {
   SET_SIMPLE_FILTER,
   SET_FIELD_SENIORITY,
@@ -5,7 +6,7 @@ import {
   SET_FIELD_SALARY,
 } from './../actions/filter';
 
-const initialState = {
+const initialState: IFilterState = {
   company_name: '',
   location: '',
   skills: [],

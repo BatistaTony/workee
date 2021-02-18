@@ -2,20 +2,24 @@ import MenuMobile from './menuMobile';
 import { CustomNavbar, Logo, Menu, MenuItem } from './style';
 import Link from 'next/link';
 
-const Navbar = () => {
+interface INavbar {
+  title: string;
+}
+
+const Navbar = ({ title }: INavbar) => {
   return (
     <CustomNavbar>
       <Logo>Workeé</Logo>
 
       <Menu>
         <Link href="/">
-          <MenuItem active={true}>Home</MenuItem>
+          <MenuItem active={title.toLowerCase() === 'workeé'}>Home</MenuItem>
         </Link>
-        <Link href="/">
-          <MenuItem>Most Required Tools</MenuItem>
+        <Link href="/market">
+          <MenuItem active={title.toLowerCase() === 'market'}>Market</MenuItem>
         </Link>
         <Link href="/about">
-          <MenuItem>About</MenuItem>
+          <MenuItem active={title.toLowerCase() === 'about'}>About</MenuItem>
         </Link>
       </Menu>
 

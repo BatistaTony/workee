@@ -14,8 +14,8 @@ const MenuMobile = () => {
               <Link href="/">
                 <li>Home</li>
               </Link>
-              <Link href="/">
-                <li>Most Required Tools</li>
+              <Link href="/market">
+                <li>Market</li>
               </Link>
               <Link href="/about">
                 <li>About</li>

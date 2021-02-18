@@ -1,5 +1,12 @@
+import AboutContainer from '@/components/about/aboutContainer';
+import Layout from '@/components/layout';
+
 const About = () => {
-  return <h1>About the platform will be here</h1>;
+  return (
+    <Layout title="About">
+      <AboutContainer />
+    </Layout>
+  );
 };
 
 export default About;

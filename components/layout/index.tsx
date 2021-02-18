@@ -1,8 +1,9 @@
 import { Layout as AntLayout } from 'antd';
 import Head from 'next/head';
+import Navbar from '../navbar';
 
 interface ILayout {
-  title?: string;
+  title: string;
   children: any;
 }
 
@@ -23,6 +24,7 @@ const Layout = ({ title, children }: ILayout) => {
           justifyContent: 'center',
         }}
       >
+        <Navbar title={title} />
         {children}
       </Content>
     </AntLayout>

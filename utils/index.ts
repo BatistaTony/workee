@@ -1,3 +1,5 @@
+import { ISalary } from '../types';
+
 export const addFlexbox = (direction: string, align: string, justify: string) => `
 
     display:flex;
@@ -18,3 +20,7 @@ export const addFont = (font: string = 'Regular') => `
     font-family: Lato-${font};
 
 `;
+
+export const printSalaryRange = (item: ISalary) => {
+  return `${item.to}$ - ${item.from}$`;
+};

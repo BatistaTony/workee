@@ -8,14 +8,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
     "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time", "Contract"],
+    "job_type": "Contract",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "Consultant",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Entry Level"
+    "level": "Entry Level",
+    "isRemote": true,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "674964fddgh656gf",
@@ -26,14 +35,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["Java", "nodejs", "expressjs", "jwt", "kubernetes"],
     "advantageSkills": ["React", "Scala", "Android native"],
-    "job_type": ["Part-time", "Remote"],
+    "job_type": "Part-time",
     "salary_range": {
       "to": 3000,
       "from": 10000
     },
     "markets": "Space",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Senior Level"
+    "level": "Senior Level",
+    "isRemote": false,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "674964fddghvvv",
@@ -44,14 +62,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components", "nodejs"],
     "advantageSkills": ["React native", "firebase"],
-    "job_type": ["Full-time", "Contract", "Remote"],
+    "job_type": "Contract",
     "salary_range": {
       "to": 500,
       "from": 1500
     },
     "markets": "healthcare industry",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Mid Level"
+    "level": "Mid Level",
+    "isRemote": true,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "6749eee64fddgh",
@@ -62,14 +89,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["java", "styled-components", "swift", "react native"],
     "advantageSkills": ["Scala", "express", "Aws"],
-    "job_type": ["Full-time", "Remote"],
+    "job_type": "Full-time",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "Sells",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Senior Level"
+    "level": "Senior Level",
+    "isRemote": true,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "674964fd46uji0dgh",
@@ -80,14 +116,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["kubernets", "docker", "linux"],
     "advantageSkills": ["Go lang"],
-    "job_type": ["Internship", "Part-time"],
+    "job_type": "Internship",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "software",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Senior Level"
+    "level": "Senior Level",
+    "isRemote": true,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "674964fdee346ngdgh",
@@ -98,14 +143,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["Java", "android", "react native", "swift", "java", "styled-components"],
     "advantageSkills": ["Scala", "kubernetes"],
-    "job_type": ["Part-time", "Remote"],
+    "job_type": "Full-time",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "food",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Senior Level"
+    "level": "Senior Level",
+    "isRemote": true,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "67232dd564964fddgh",
@@ -116,14 +170,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["Reactjs", "css", "styled-components", "css", "javascript"],
     "advantageSkills": ["React native", "Scala", "Android native", "typescript"],
-    "job_type": ["Part-time", "Remote"],
+    "job_type": "Part-time",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "Television",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Student Level"
+    "level": "Student Level",
+    "isRemote": true,
+    "experience_years": 2,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "67422cyi780964fddgh",
@@ -134,14 +197,23 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["Mysql", "MongoDb", "CouchDb"],
     "advantageSkills": [],
-    "job_type": ["Full-time", "Contract"],
+    "job_type": "Full-time",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "Cars",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Student Level"
+    "level": "Student Level",
+    "isRemote": true,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   },
   {
     "id": "67496457fgjga4fddgh",
@@ -152,13 +224,22 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["html", "css", "reactjs", "styled-components"],
     "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": ["Part-time", "Remote", "Contract"],
+    "job_type": "Part-time",
     "salary_range": {
       "to": 300,
       "from": 1500
     },
     "markets": "healthcare",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
-    "level": "Mid Level"
+    "level": "Mid Level",
+    "isRemote": false,
+    "experience_years": 3,
+    "email": "taikai.job@network.com",
+    "website": "http://taikai.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
   }
 ]

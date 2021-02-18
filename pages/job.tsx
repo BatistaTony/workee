@@ -1,5 +1,12 @@
+import JobContainer from '@/components/job/jobContainer';
+import Layout from '@/components/layout';
+
 const Job = () => {
-  return <h1>Is suppose to have a job description here</h1>;
+  return (
+    <Layout title="Workeé">
+      <JobContainer />
+    </Layout>
+  );
 };
 
 export default Job;

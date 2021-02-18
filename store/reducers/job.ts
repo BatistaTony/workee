@@ -9,7 +9,7 @@ const initialState: IJob = {
   overview: '',
   required_skills: [],
   advantageSkills: [],
-  job_type: [],
+  job_type: '',
   salary_range: {
     to: 0,
     from: 0,
@@ -17,6 +17,15 @@ const initialState: IJob = {
   markets: '',
   date: '',
   level: '',
+  email: '',
+  isRemote: false,
+  website: '',
+  experience_years: 0,
+  social_networks: {
+    facebook: '',
+    linkDin: '',
+    twitter: '',
+  },
 };
 
 interface IAction {

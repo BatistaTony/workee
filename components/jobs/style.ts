@@ -8,6 +8,10 @@ export const ListJobs = styled.div`
   margin-top: 30px;
   box-sizing: border-box;
   padding-left: 40px;
+
+  @media (max-width: 860px) {
+    padding-left: 0;
+  }
 `;
 
 export const ListHeader = styled.div`
@@ -18,16 +22,45 @@ export const ListHeader = styled.div`
   .title {
     color: white;
     ${addFont('Bold')};
+    font-size: 18pt;
+
+    @media (min-width: 1600px) {
+      font-size: 22pt;
+    }
+
+    @media (min-width: 2100px) {
+      font-size: 30pt;
+    }
   }
 
   .ant-select {
     .ant-select-selection-item {
       color: white;
       ${addFont()};
+
+      font-size: 12pt;
+
+      @media (min-width: 1600px) {
+        font-size: 14pt;
+      }
+
+      @media (min-width: 2100px) {
+        font-size: 17pt;
+      }
     }
 
     svg {
       fill: white;
+
+      @media (min-width: 1600px) {
+        width: 15px;
+        height: 15px;
+      }
+
+      @media (min-width: 2100px) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 `;
@@ -38,6 +71,32 @@ export const ListStyled = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 30%);
   justify-content: space-between;
+  align-items: flex-start;
+
+  @media (max-width: 1150px) {
+    grid-template-columns: repeat(3, 32%);
+  }
+
+  @media (max-width: 1075px) {
+    grid-template-columns: repeat(2, 47%);
+  }
+
+  @media (max-width: 920px) {
+    grid-template-columns: repeat(2, 48.5%);
+  }
+
+  @media (max-width: 630px) {
+    grid-template-columns: 100%;
+  }
+
+  @media (min-width: 1600px) {
+    grid-template-columns: repeat(3, 32%);
+    margin-top: 30px;
+  }
+
+  @media (min-width: 2100px) {
+    margin-top: 40px;
+  }
 `;
 
 export const CardStyled = styled.div`
@@ -49,6 +108,36 @@ export const CardStyled = styled.div`
   box-sizing: border-box;
   padding: 15px;
   position: relative;
+
+  @media (max-width: 1075px) {
+    height: 230px;
+  }
+
+  @media (max-width: 920px) {
+    height: 270px;
+  }
+
+  @media (max-width: 860px) {
+    height: 230px;
+  }
+
+  @media (max-width: 730px) {
+    height: 260px;
+  }
+
+  @media (max-width: 630px) {
+    height: auto;
+  }
+
+  @media (min-width: 1600px) {
+    padding: 20px;
+    height: 300px;
+  }
+
+  @media (min-width: 2100px) {
+    padding: 30px;
+    height: 400px;
+  }
 
   .header_ {
     width: 100%;
@@ -66,6 +155,16 @@ export const CardStyled = styled.div`
     height: 50px;
     border-radius: 100%;
     background: ${colors.button};
+
+    @media (min-width: 1600px) {
+      width: 60px;
+      height: 60px;
+    }
+
+    @media (min-width: 2100px) {
+      width: 75px;
+      height: 75px;
+    }
   }
 
   .job_title {
@@ -73,19 +172,48 @@ export const CardStyled = styled.div`
     font-size: 12pt;
     color: white;
     margin-top: 5px;
+
+    @media (min-width: 1600px) {
+      font-size: 14pt;
+    }
+
+    @media (min-width: 2100px) {
+      font-size: 19pt;
+    }
   }
 
   .companyName_address {
     ${addFont()};
     font-size: 9.5pt;
     color: white;
+    margin: 0;
+
+    @media (min-width: 1600px) {
+      font-size: 12pt;
+    }
+
+    @media (min-width: 2100px) {
+      font-size: 16pt;
+    }
   }
 
   .items {
     ${addFlexbox('row', 'flex-start', 'flex-start')};
     flex-wrap: wrap;
     list-style: none;
-    margin-top: 10px;
+    margin-top: 15px;
+
+    @media (max-width: 630px) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: 1600px) {
+      margin-top: 25px;
+    }
+
+    @media (min-width: 2100px) {
+      margin-top: 30px;
+    }
 
     .item {
       border-radius: 3px;
@@ -99,6 +227,20 @@ export const CardStyled = styled.div`
       padding-left: 5px;
       padding-right: 5px;
       margin-bottom: 10px;
+
+      @media (min-width: 1600px) {
+        font-size: 11pt;
+        padding-left: 7px;
+        padding-right: 7px;
+        margin-bottom: 13px;
+      }
+
+      @media (min-width: 2100px) {
+        font-size: 13pt;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 16px;
+      }
     }
   }
 
@@ -109,12 +251,31 @@ export const CardStyled = styled.div`
     ${addFlexbox('row', 'center', 'space-between')};
     height: 30px;
 
+    @media (min-width: 1600px) {
+      bottom: 15px;
+      height: 45px;
+    }
+
+    @media (min-width: 2100px) {
+      bottom: 20px;
+      height: 55px;
+    }
+
     .timePost {
-      ${addFont('Bold')};
+      ${addFont()};
       color: white;
       height: 100%;
       margin: 0;
       padding: 0;
+      font-size: 12pt;
+
+      @media (min-width: 1600px) {
+        font-size: 14pt;
+      }
+
+      @media (min-width: 2100px) {
+        font-size: 18pt;
+      }
     }
   }
 `;
@@ -131,4 +292,14 @@ export const ButtonApply = styled.button`
   ${addFont('Bold')};
   font-size: 10pt;
   color: white;
+
+  @media (min-width: 1600px) {
+    width: 130px;
+    font-size: 14pt;
+  }
+
+  @media (min-width: 2100px) {
+    width: 160px;
+    font-size: 18pt;
+  }
 `;

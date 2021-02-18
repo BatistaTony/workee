@@ -2,6 +2,7 @@ import { IListFilter, ISalary } from '@/types/index';
 import { CustomListFilter, ListItemsFilter } from './style';
 import { useDispatch } from 'react-redux';
 import { setFieldSeniority, setFieldJobType, setFieldSalary } from './../../store/actions/filter';
+import { printSalaryRange } from '@/utils/index';
 
 const ListFilter = ({ title, items }: IListFilter) => {
   const dispatch = useDispatch();
@@ -18,10 +19,6 @@ const ListFilter = ({ title, items }: IListFilter) => {
     if (title === 'Salary Range') {
       dispatch(setFieldSalary(value));
     }
-  };
-
-  const printSalaryRange = (item: ISalary) => {
-    return `${item.to}$ - ${item.from}$`;
   };
 
   return (

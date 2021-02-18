@@ -64,12 +64,12 @@ export const MenuItem = styled.li<{ active?: boolean }>`
   transition: 0.5s;
 
   @media (min-width: 1600px) {
-    font-size: 13pt;
+    font-size: 14pt;
     margin-left: 30px;
   }
 
   @media (min-width: 2100px) {
-    font-size: 15pt;
+    font-size: 16pt;
     margin-left: 40px;
   }
 

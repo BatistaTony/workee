@@ -6,31 +6,31 @@ export const StyledContainer = styled.div`
   width: 90%;
   height: auto;
   padding-bottom: 10%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+
+  padding-top: 30px;
 
   @media (max-width: 650px) {
     padding-top: 70px;
   }
 
+  @media (min-width: 1600px) {
+    grid-template-columns: 80% 20%;
+    padding-top: 40px;
+  }
+
   @media (min-width: 2100px) {
     width: 75%;
+    grid-template-columns: 77% 23%;
   }
 
   .containerSec {
-    width: 70%;
+    width: 100%;
     height: auto;
-    margin-top: 30px;
 
     @media (max-width: 1150px) {
       width: 100%;
-    }
-
-    @media (min-width: 1600px) {
-      width: 80%;
-      margin-top: 40px;
-    }
-
-    @media (min-width: 2100px) {
-      width: 77%;
     }
 
     .cover {
@@ -407,5 +407,30 @@ export const StyledContainer = styled.div`
         }
       }
     }
+  }
+
+  .similarJob {
+    width: 100%;
+    background: auto;
+    height: 70vh;
+    box-sizing: border-radius;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    .title {
+      font-size: 14pt;
+      color: white;
+      ${addFont('Bold')};
+
+      @media (min-width: 1600px) {
+        font-size: 17pt;
+      }
+
+      @media (min-width: 2100px) {
+        font-size: 27pt;
+      }
+    }
+
+    width: 100%;
   }
 `;

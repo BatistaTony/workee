@@ -2,6 +2,7 @@ import { IJob } from '@/types/index';
 // import { Skeleton } from 'antd';
 import { CardStyled, ButtonApply } from './style';
 import Link from 'next/link';
+import LastPostedDate from '@/elements/lastPosted';
 
 const CardJob = ({ job }: { job: IJob }) => {
   const items = [...job.required_skills, job.job_type];
@@ -30,7 +31,9 @@ const CardJob = ({ job }: { job: IJob }) => {
         <Link href={`/job?id=${job.id}`}>
           <ButtonApply>Apply now</ButtonApply>
         </Link>
-        <p className="timePost">Now</p>
+        <p className="timePost">
+          <LastPostedDate date={job.date} />
+        </p>
       </div>
     </CardStyled>
   );

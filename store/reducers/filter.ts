@@ -4,6 +4,7 @@ import {
   SET_FIELD_SENIORITY,
   SET_JOB_TYPE,
   SET_FIELD_SALARY,
+  SET_FIELD_TIME
 } from './../actions/filter';
 
 const initialState: IFilterState = {
@@ -13,6 +14,7 @@ const initialState: IFilterState = {
   job_type: [],
   job_senerioty: [],
   salary_range: [],
+  time: 20,
 };
 
 interface IAction {
@@ -77,6 +79,12 @@ const filter = (state = initialState, action: IAction) => {
           ...state,
           salary_range: [...state.salary_range, action.payload],
         };
+      }
+    }
+
+    case SET_FIELD_TIME : {
+      return {
+        ...state, time: action.payload
       }
     }
 

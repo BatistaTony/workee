@@ -2,6 +2,8 @@ export const SET_SIMPLE_FILTER = 'SET_SIMPLE_FILTER';
 export const SET_JOB_TYPE = 'SET_JOB_TYPE';
 export const SET_FIELD_SENIORITY = 'SET_FIELD_SENIORITY';
 export const SET_FIELD_SALARY = 'SET_FIELD_SALARY';
+export const SET_FIELD_TIME = 'SET_FIELD_TIME';
+
 
 interface IPayload {
   company_name: string;
@@ -33,6 +35,13 @@ export const setFieldSeniority = value => {
 export const setFieldSalary = value => {
   return {
     type: SET_FIELD_SALARY,
+    payload: value,
+  };
+};
+
+export const setFieldTime = value => {
+  return {
+    type: SET_FIELD_TIME,
     payload: value,
   };
 };

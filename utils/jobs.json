@@ -190,7 +190,7 @@
     "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
     "required_skills": ["Reactjs", "css", "styled-components", "css", "javascript"],
     "advantageSkills": ["React native", "Scala", "Android native", "typescript"],
-    "job_type": "Part-time",
+    "job_type": "Interniship",
     "salary_range": {
       "to": 300,
       "from": 1500

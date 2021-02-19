@@ -1,3 +1,4 @@
+import colors from '@/utils/colors';
 import { addFlexbox, addFont } from '@/utils/index';
 import styled from 'styled-components';
 
@@ -12,7 +13,7 @@ export const ContainerStyled = styled.div`
   }
 
   .inform {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     width: 90%;
 
     @media (min-width: 1600px) {
@@ -24,20 +25,109 @@ export const ContainerStyled = styled.div`
       width: 75%;
       margin-bottom: 40px;
     }
+
+    .title {
+      width: 100%;
+      text-align: center;
+
+      font-size: 30pt;
+      ${addFont('Black')};
+      color: white;
+
+      @media (min-width: 1400px) {
+        font-size: 35pt;
+      }
+
+      @media (min-width: 1672px) {
+        font-size: 45pt;
+      }
+
+      @media (min-width: 2000px) {
+        font-size: 55pt;
+      }
+
+      @media (min-width: 2600px) {
+        font-size: 65pt;
+      }
+
+      @media (max-width: 1010px) {
+        font-size: 25pt;
+      }
+
+      @media (max-width: 670px) {
+        font-size: 20pt;
+      }
+    }
   }
 
-  .title {
-    width: 90%;
-    ${addFont('Bold')};
-    color: white;
-    font-size: 17pt;
+  .tableMarket {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: ${colors.navbar};
+    display: grid;
+    grid-template-columns: 50% 50%;
 
     @media (min-width: 1600px) {
-      font-size: 23pt;
+      height: 150px;
+      margin-bottom: 20px;
     }
 
     @media (min-width: 2100px) {
-      font-size: 30pt;
+      height: 200px;
+      margin-bottom: 40px;
+    }
+
+    .cels,
+    .data_ {
+      width: 100%;
+      height: 50px;
+      border-right: 1px solid ${colors.bg};
+      border-bottom: 1px solid ${colors.bg};
+      ${addFlexbox('row', 'center', 'center')};
+
+      @media (min-width: 1600px) {
+        height: 70px;
+      }
+
+      @media (min-width: 2100px) {
+        height: 100px;
+      }
+
+      &:last-child,
+      &:nth-child(5) {
+        border-right: none;
+      }
+
+      p {
+        font-size: 12pt;
+        color: white;
+        ${addFont('Bold')};
+        margin: 0;
+
+        @media (max-width: 770px) {
+          font-size: 10pt;
+        }
+
+        @media (min-width: 1600px) {
+          font-size: 16pt;
+        }
+
+        @media (min-width: 2100px) {
+          font-size: 23pt;
+        }
+      }
+    }
+
+    .data_ {
+      border-bottom: none;
+      height: auto;
+      ${addFlexbox('row', 'flex-start', 'center')};
+
+      p {
+        color: ${colors.secundaryText};
+      }
     }
   }
 
@@ -49,7 +139,7 @@ export const ContainerStyled = styled.div`
       ${addFont()};
       font-size: 12pt;
       color: white;
-      margin-bottom: 10px;
+      margin-top: 10px;
 
       @media (max-width: 870px) {
         font-size: 11pt;

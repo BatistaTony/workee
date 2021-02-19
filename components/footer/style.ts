@@ -1,10 +1,11 @@
+import colors from '@/utils/colors';
 import { addFlexbox, addFont } from '@/utils/index';
 import styled from 'styled-components';
 
 export const FooterStyled = styled.div`
   width: 100%;
   height: 100px;
-  background: #cf0082;
+  background: ${colors.navbar};
   margin-top: 10%;
   ${addFlexbox('row', 'center', 'center')};
 
@@ -18,8 +19,10 @@ export const FooterStyled = styled.div`
 
   p {
     font-size: 13pt;
-    ${addFont('Bold')};
+    ${addFont()};
     color: white;
+    margin: 0;
+    padding: 0;
 
     @media (max-width: 900px) {
       font-size: 11pt;

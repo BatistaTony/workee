@@ -12,6 +12,52 @@ export const ListJobs = styled.div`
   @media (max-width: 860px) {
     padding-left: 0;
   }
+
+  .pagination {
+    width: 100%;
+    ${addFlexbox('row', 'center', 'center')};
+    list-style: none;
+    padding-bottom: 5%;
+
+    li {
+      margin-right: 30px;
+      height: 30px;
+      width: 30px;
+      border-radius: 5px;
+      font-size: 10pt;
+      background: ${colors.navbar};
+      ${addFont('Bold')};
+      ${addFlexbox('row', 'center', 'center')};
+      transition: 0.5s;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+
+      &:hover {
+        background: ${colors.secundaryText};
+      }
+
+      @media (min-width: 1600px) {
+        font-size: 13pt;
+        height: 36px;
+        width: 36px;
+      }
+
+      @media (min-width: 2100px) {
+        font-size: 15.5pt;
+        height: 43px;
+        width: 43px;
+      }
+
+      @media (min-width: 2800px) {
+        font-size: 18.5pt;
+        height: 50px;
+        width: 50px;
+      }
+    }
+  }
 `;
 
 export const ListHeader = styled.div`

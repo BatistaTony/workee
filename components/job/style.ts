@@ -418,7 +418,7 @@ export const StyledContainer = styled.div`
     padding-left: 30px;
     padding-right: 30px;
 
-    .list { 
+    .list {
       width: 100%;
 
       @media (max-width: 1150px) {
@@ -430,6 +430,10 @@ export const StyledContainer = styled.div`
       @media (max-width: 630px) {
         display: grid;
         grid-template-columns: 100%;
+      }
+
+      .style__CardStyled-sc-43qgq4-3 {
+        margin-bottom: 40px;
       }
     }
 

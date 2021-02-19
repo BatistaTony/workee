@@ -150,7 +150,7 @@ export const CardStyled = styled.div`
   height: 270px;
   border-radius: 5px;
   background: ${colors.navbar};
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   box-sizing: border-box;
   padding: 15px;
   position: relative;
@@ -178,11 +178,13 @@ export const CardStyled = styled.div`
   @media (min-width: 1600px) {
     padding: 20px;
     height: 300px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: 2100px) {
     padding: 30px;
     height: 400px;
+    margin-bottom: 40px;
   }
 
   .header_ {

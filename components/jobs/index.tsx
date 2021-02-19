@@ -16,7 +16,7 @@ const Jobs = () => {
   const filter = useSelector((state: IRootState) => state.filter);
 
   const [currentPage, setCurrentPage] = useState(1);
-  const jobsPerPage = 6;
+  const jobsPerPage = 9;
 
   const compName = RegExp(`${filter.company_name}`, 'gi');
   const lction = RegExp(`${filter.location}`, 'gi');
@@ -211,9 +211,9 @@ const Jobs = () => {
       {!checkIfIsFiltering() && (
         <Pagination
           activePage={currentPage}
-          itemsCountPerPage={6}
+          itemsCountPerPage={jobsPerPage}
           totalItemsCount={jobs.length}
-          pageRangeDisplayed={6}
+          pageRangeDisplayed={jobsPerPage}
           onChange={handlePaginationClick}
         />
       )}

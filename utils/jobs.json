@@ -3,20 +3,20 @@
     "id": "674964fddg345346675nmbfgh",
     "company_name": "TAIKAI",
     "location": "Usa, Los Angeles, Tony Ville",
-    "job_title": "Front End Engineer",
+    "job_title": "Back End Engineer",
     "overview": "Hey! If you don’t like your story, rewrite it with TAIKAI! TAIKAI is an open innovation platform that works with organizations, universities and event organizers from around the world helping them to organize innovation competitions and hackathons.",
     "description": "TAIKAI is looking for an experienced frontend engineer to join the TAIKAI's team to help us develop modular and delightful user interfaces for our products. Our platform is growing and we need your cooperation to provide an enjoyable and seamless UI experience for our TAIKAI users.",
     "required_skills": ["html", "css", "reactjs", "swift", "java", "styled-components"],
     "advantageSkills": ["React native", "Scala", "Android native"],
-    "job_type": "Contract",
+    "job_type": "Full-time",
     "salary_range": {
-      "to": 2500,
-      "from": 3500
+      "to": 1500,
+      "from": 2500
     },
-    "markets": "Consultant",
+    "markets": "Platform Innovation",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Entry Level",
-    "experience_years": 3,
+    "experience_years": 7,
     "email": "taikai.job@network.com",
     "website": "http://taikai.com",
     "social_networks": {
@@ -39,12 +39,12 @@
       "to": 2500,
       "from": 3500
     },
-    "markets": "Consultant",
+    "markets": "Platform Innovation",
     "date": "Wed Feb 1 2021 19:16:44 GMT+0100",
     "job_seniority": "Entry Level",
-    "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "experience_years": 2,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -62,15 +62,15 @@
     "advantageSkills": ["React", "Scala", "Android native"],
     "job_type": "Part-time",
     "salary_range": {
-      "to": 3000,
-      "from": 10000
+      "to": 1500,
+      "from": 2500
     },
     "markets": "Space",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
     "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -88,15 +88,15 @@
     "advantageSkills": ["React native", "firebase"],
     "job_type": "Contract",
     "salary_range": {
-      "to": 500,
-      "from": 1500
+      "to": 1500,
+      "from": 2500
     },
-    "markets": "healthcare industry",
+    "markets": "healthcare",
     "date": "Wed Feb 6 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -114,15 +114,15 @@
     "advantageSkills": ["Scala", "express", "Aws"],
     "job_type": "Full-time",
     "salary_range": {
-      "to": 300,
-      "from": 1500
+      "to": 2500,
+      "from": 3500
     },
     "markets": "Sells",
     "date": "Wed Jan 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
-    "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "experience_years": 5,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -140,15 +140,15 @@
     "advantageSkills": ["Go lang"],
     "job_type": "Internship",
     "salary_range": {
-      "to": 300,
-      "from": 1500
+      "to": 2500,
+      "from": 3500
     },
     "markets": "software",
     "date": "Wed Jan 11 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
-    "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "experience_years": 2,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -166,15 +166,15 @@
     "advantageSkills": ["Scala", "kubernetes"],
     "job_type": "Full-time",
     "salary_range": {
-      "to": 300,
-      "from": 1500
+      "to": 3500,
+      "from": 4500
     },
     "markets": "food",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
     "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -199,8 +199,8 @@
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Student Level",
     "experience_years": 2,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -218,15 +218,15 @@
     "advantageSkills": [],
     "job_type": "Full-time",
     "salary_range": {
-      "to": 300,
-      "from": 1500
+      "to": 4500,
+      "from": 5500
     },
     "markets": "Cars",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Student Level",
     "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",
@@ -234,7 +234,7 @@
     }
   },
   {
-    "id": "67496457fgjga4fddgh",
+    "id": "67496457f465gjga4fddgh",
     "company_name": "Apple",
     "location": "Usa, California, Silicon Valley",
     "job_title": "Front End Engineer",
@@ -244,15 +244,145 @@
     "advantageSkills": ["React native", "Scala", "Android native"],
     "job_type": "Part-time",
     "salary_range": {
-      "to": 1500,
-      "from": 2500
+      "to": 3500,
+      "from": 4500
     },
     "markets": "healthcare",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 3,
-    "email": "taikai.job@network.com",
-    "website": "http://taikai.com",
+    "email": "company.job@network.com",
+    "website": "http://company.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
+  },
+  {
+    "id": "67496457ffu64dye36gjga4fddgh",
+    "company_name": "Tesla",
+    "location": "Jupter, Tesla City",
+    "job_title": "Vue Consultant",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "styled-components"],
+    "advantageSkills": ["React native", "Scala", "Android native"],
+    "job_type": "Part-time",
+    "salary_range": {
+      "to": 7500,
+      "from": 10500
+    },
+    "markets": "cars",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "job_seniority": "Mid Level",
+    "experience_years": 10,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
+  },
+  {
+    "id": "67496457ffuyhgflje36gjga4fddgh",
+    "company_name": "Tesla",
+    "location": "Jupter, Tesla City",
+    "job_title": "Angular Developer",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "styled-components"],
+    "advantageSkills": ["React native", "Scala", "Android native"],
+    "job_type": "Interniship",
+    "salary_range": {
+      "to": 7500,
+      "from": 10500
+    },
+    "markets": "cars",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "job_seniority": "Mid Level",
+    "experience_years": 10,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
+  },
+  {
+    "id": "67496457ffuye36gj34ga4fddgh",
+    "company_name": "Tesla",
+    "location": "Jupter, Tesla City",
+    "job_title": "Typescript Consultant",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "styled-components"],
+    "advantageSkills": ["React native", "Scala", "Android native"],
+    "job_type": "Part-time",
+    "salary_range": {
+      "to": 7500,
+      "from": 10500
+    },
+    "markets": "cars",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "job_seniority": "Student Level",
+    "experience_years": 10,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
+  },
+  {
+    "id": "67496457ffuye36yrbfgjga4fddgh",
+    "company_name": "Tesla",
+    "location": "Jupter, Tesla City",
+    "job_title": "Android Consultant",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "styled-components"],
+    "advantageSkills": ["React native", "Scala", "Android native"],
+    "job_type": "Part-time",
+    "salary_range": {
+      "to": 7500,
+      "from": 10500
+    },
+    "markets": "cars",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "job_seniority": "Mid Level",
+    "experience_years": 10,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
+    "social_networks": {
+      "linkDin": "http://linkdin.com",
+      "facebook": "http://facebook.com",
+      "twitter": "http://twitter.com"
+    }
+  },
+  {
+    "id": "67496457ffuye36geyt54gjga4fddgh",
+    "company_name": "Tesla",
+    "location": "Jupter, Tesla City",
+    "job_title": "Swift Dev",
+    "description": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "overview": "Checkbox is an HTML element which is used to take input from the user. Although it is bit complicated to style it but using Pseudo Elements like :before, :after, :hover and :checked, it is possible to style a checkbox.",
+    "required_skills": ["html", "css", "reactjs", "styled-components"],
+    "advantageSkills": ["React native", "Scala", "Android native"],
+    "job_type": "Part-time",
+    "salary_range": {
+      "to": 7500,
+      "from": 10500
+    },
+    "markets": "cars",
+    "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
+    "job_seniority": "Mid Level",
+    "experience_years": 10,
+    "email": "company.job@network.com",
+    "website": "http://company.com",
     "social_networks": {
       "linkDin": "http://linkdin.com",
       "facebook": "http://facebook.com",

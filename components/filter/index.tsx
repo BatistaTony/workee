@@ -11,7 +11,10 @@ const Filter = ({ isMobile }: IFilter) => {
   const salaries_range = [
     { to: 1500, from: 2500 },
     { to: 2500, from: 3500 },
-    { to: 3500, from: 5500 },
+    { to: 3500, from: 4500 },
+    { to: 3500, from: 4500 },
+    { to: 4500, from: 5500 },
+    { to: 7500, from: 10500 },
   ];
 
   return (

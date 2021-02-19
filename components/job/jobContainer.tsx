@@ -59,12 +59,7 @@ const JobContainer = () => {
     social_networks,
   } = job;
 
-  const data = [
-    job_seniority,
-    job_type,
-    markets,
-    printSalaryRange(salary_range),
-  ];
+  const data = [job_seniority, job_type, markets, printSalaryRange(salary_range)];
 
   const router = useRouter();
 
@@ -168,7 +163,7 @@ const JobContainer = () => {
 
           {advantageSkills.length > 0 && (
             <ul className="list_skills">
-              <h1 className="title">Advantage who has</h1>
+              <h1 className="title">Nice to have</h1>
               {advantageSkills.map((item, index) => (
                 <li key={index}>{item}</li>
               ))}

@@ -21,7 +21,7 @@ const JobContainer = () => {
     id: '',
     job_title: '',
     job_type: '',
-    level: '',
+    job_seniority: '',
     location: '',
     markets: '',
     overview: '',
@@ -48,7 +48,7 @@ const JobContainer = () => {
     email,
     job_title,
     job_type,
-    level,
+    job_seniority,
     id,
     location,
     markets,
@@ -61,7 +61,13 @@ const JobContainer = () => {
     isRemote,
   } = job;
 
-  const data = [isRemote ? 'yes' : 'Not', level, job_type, markets, printSalaryRange(salary_range)];
+  const data = [
+    isRemote ? 'yes' : 'Not',
+    job_seniority,
+    job_type,
+    markets,
+    printSalaryRange(salary_range),
+  ];
 
   const router = useRouter();
 

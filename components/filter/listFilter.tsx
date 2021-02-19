@@ -27,8 +27,15 @@ const ListFilter = ({ title, items }: IListFilter) => {
     if (value === 'Remote') {
       const result = jobs.filter(job => job.isRemote);
       return result.length;
-    } else {
+    } else if (title === 'Job type') {
       const result = jobs.filter(job => job.job_type === value);
+      return result.length;
+    } else if (title === 'Seniority') {
+      const result = jobs.filter(job => job.job_seniority === value);
+      return result.length;
+    } else if (title === 'Salary Range') {
+      const result = jobs.filter(job => JSON.stringify(job.salary_range) === JSON.stringify(value));
+      console.log(result);
       return result.length;
     }
   };

@@ -22,7 +22,7 @@ export interface IJob {
   markets: string;
   date: Date | string;
   isRemote: boolean;
-  job_senerioty: string;
+  job_seniority: string;
   experience_years: number;
   email: string;
   website: string;
@@ -38,7 +38,7 @@ export interface IFilterState {
   location: string;
   skills: string[];
   job_type: string[];
-  job_senerioty: string[];
+  job_seniority: string[];
   salary_range: string[];
   time: number;
 }

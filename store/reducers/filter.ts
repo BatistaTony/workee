@@ -4,7 +4,7 @@ import {
   SET_FIELD_SENIORITY,
   SET_JOB_TYPE,
   SET_FIELD_SALARY,
-  SET_FIELD_TIME
+  SET_FIELD_TIME,
 } from './../actions/filter';
 
 const initialState: IFilterState = {
@@ -12,7 +12,7 @@ const initialState: IFilterState = {
   location: '',
   skills: [],
   job_type: [],
-  job_senerioty: [],
+  job_seniority: [],
   salary_range: [],
   time: 20,
 };
@@ -47,19 +47,19 @@ const filter = (state = initialState, action: IAction) => {
     }
 
     case SET_FIELD_SENIORITY: {
-      const oldLevels: string[] | any = state.job_senerioty;
+      const oldLevels: string[] | any = state.job_seniority;
 
       if (oldLevels.includes(action.payload)) {
-        const newLevels = state.job_senerioty.filter(item => item !== action.payload);
+        const newLevels = state.job_seniority.filter(item => item !== action.payload);
 
         return {
           ...state,
-          job_senerioty: [...newLevels],
+          job_seniority: [...newLevels],
         };
       } else {
         return {
           ...state,
-          job_senerioty: [...state.job_senerioty, action.payload],
+          job_seniority: [...state.job_seniority, action.payload],
         };
       }
     }
@@ -82,10 +82,11 @@ const filter = (state = initialState, action: IAction) => {
       }
     }
 
-    case SET_FIELD_TIME : {
+    case SET_FIELD_TIME: {
       return {
-        ...state, time: action.payload
-      }
+        ...state,
+        time: action.payload,
+      };
     }
 
     default: {

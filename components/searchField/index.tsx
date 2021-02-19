@@ -13,12 +13,14 @@ interface IState {
   skills: string[] | any;
 }
 
+const defaultState = {
+  company_name: '',
+  location: '',
+  skills: [],
+};
+
 const SearchField = () => {
-  const [state, setState] = useState<IState>({
-    company_name: '',
-    location: '',
-    skills: [],
-  });
+  const [state, setState] = useState<IState>(defaultState);
 
   const dispatch = useDispatch();
 
@@ -28,6 +30,10 @@ const SearchField = () => {
 
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     setState({ ...state, [event.target.name]: event.target.value });
+
+    if (event.target.value === '') {
+      dispatch(setSimpeFilter(defaultState));
+    }
   };
 
   const handleSelect = selected => {

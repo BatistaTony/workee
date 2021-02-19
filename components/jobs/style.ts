@@ -1,6 +1,7 @@
 import { addFlexbox, addFont } from '@/utils/index';
 import styled from 'styled-components';
 import colors from '@/utils/colors';
+import { motion } from 'framer-motion';
 
 export const ListJobs = styled.div`
   width: 100%;
@@ -145,7 +146,7 @@ export const ListStyled = styled.div`
   }
 `;
 
-export const CardStyled = styled.div`
+export const CardStyled = styled(motion.div)`
   width: 100%;
   height: 270px;
   border-radius: 5px;

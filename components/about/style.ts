@@ -7,6 +7,10 @@ export const StyledContainer = styled.div`
   ${addFlexbox('column', 'center', 'center')};
   margin-top: 50px;
 
+  @media (min-height: 1000px) {
+    height: 90vh;
+  }
+
   @media (max-width: 650px) {
     margin-top: 100px;
   }

@@ -3,12 +3,26 @@ import { IJob } from '@/types/index';
 import { CardStyled, ButtonApply } from './style';
 import Link from 'next/link';
 import LastPostedDate from '@/elements/lastPosted';
+import { motion, AnimatePresence } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const CardJob = ({ job }: { job: IJob }) => {
   const items = [...job.required_skills, job.job_type];
 
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    rootMargin: '-100px 0px',
+  });
+
+  const animationStyle = { opacity: 1, y: 0 };
+
   return (
-    <CardStyled>
+    <CardStyled
+      ref={ref}
+      initial={{ opacity: 0, y: -100 }}
+      animate={inView ? animationStyle : {}}
+      exit={{ opacity: 0, y: -100 }}
+    >
       <div className="header_">
         <img src="./bg.jpg" alt="W" className="avatar" />
         <div className="info">

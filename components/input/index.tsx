@@ -6,9 +6,10 @@ interface IInput {
   icon: any;
   placeholder: string;
   handleChange: (event: ChangeEvent<HTMLInputElement>) => void;
+  value?: string;
 }
 
-const CustomInput = ({ name, icon, handleChange, ...props }: IInput) => {
+const CustomInput = ({ name, icon, handleChange, value, ...props }: IInput) => {
   return (
     <CustomInputStyled
       style={{ backgroundColor: 'transparent', border: 'none', outline: 'none' }}
@@ -16,6 +17,7 @@ const CustomInput = ({ name, icon, handleChange, ...props }: IInput) => {
       onChange={(event: ChangeEvent<HTMLInputElement>) => handleChange(event)}
       autoComplete="off"
       name={name}
+      value={value}
       {...props}
     />
   );

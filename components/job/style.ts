@@ -179,7 +179,7 @@ export const StyledContainer = styled.div`
       margin-top: 20px;
       background: ${colors.navbar};
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(4, 1fr);
       grid-template-rows: 50% 50%;
 
       @media (max-width: 600px) {
@@ -205,7 +205,7 @@ export const StyledContainer = styled.div`
         ${addFlexbox('row', 'center', 'center')};
 
         &:last-child,
-        &:nth-child(5) {
+        &:nth-child(4) {
           border-right: none;
         }
 

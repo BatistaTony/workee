@@ -24,10 +24,7 @@ const ListFilter = ({ title, items }: IListFilter) => {
   };
 
   const getNumberOfJobsByValue = value => {
-    if (value === 'Remote') {
-      const result = jobs.filter(job => job.isRemote);
-      return result.length;
-    } else if (title === 'Job type') {
+    if (title === 'Job type') {
       const result = jobs.filter(job => job.job_type === value);
       return result.length;
     } else if (title === 'Seniority') {

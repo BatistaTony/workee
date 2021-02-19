@@ -6,7 +6,7 @@ interface IFilter {
 }
 
 const Filter = ({ isMobile }: IFilter) => {
-  const jobTypes = ['Remote', 'Full-time', 'Part-time', 'Interniship', 'Contract'];
+  const jobTypes = ['Full-time', 'Part-time', 'Interniship', 'Contract'];
   const seniorityLevel = ['Student Level', 'Entry Level', 'Mid Level', 'Senior Level'];
   const salaries_range = [
     { to: 1500, from: 2500 },

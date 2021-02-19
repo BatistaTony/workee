@@ -15,23 +15,24 @@ export const StyledContainer = styled.div`
     padding-top: 70px;
   }
 
-  @media (min-width: 1600px) {
+  /* @media (min-width: 1600px) {
     grid-template-columns: 80% 20%;
     padding-top: 40px;
-  }
+  } */
 
   @media (min-width: 2100px) {
-    width: 75%;
-    grid-template-columns: 77% 23%;
+    width: 77%;
+    grid-template-columns: 72% 28%;
+  }
+
+  @media (max-width: 1150px) {
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
   }
 
   .containerSec {
     width: 100%;
     height: auto;
-
-    @media (max-width: 1150px) {
-      width: 100%;
-    }
 
     .cover {
       width: 100%;
@@ -417,6 +418,25 @@ export const StyledContainer = styled.div`
     padding-left: 30px;
     padding-right: 30px;
 
+    .list {
+      width: 100%;
+
+      @media (max-width: 1150px) {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+      }
+
+      @media (max-width: 630px) {
+        display: grid;
+        grid-template-columns: 100%;
+      }
+
+      .style__CardStyled-sc-43qgq4-3 {
+        margin-bottom: 40px;
+      }
+    }
+
     .title {
       font-size: 14pt;
       color: white;
@@ -430,7 +450,5 @@ export const StyledContainer = styled.div`
         font-size: 27pt;
       }
     }
-
-    width: 100%;
   }
 `;

@@ -35,7 +35,6 @@ const ListFilter = ({ title, items }: IListFilter) => {
       return result.length;
     } else if (title === 'Salary Range') {
       const result = jobs.filter(job => JSON.stringify(job.salary_range) === JSON.stringify(value));
-      console.log(result);
       return result.length;
     }
   };

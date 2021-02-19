@@ -5,6 +5,7 @@ import CardJob from './cardJob';
 import { IFilterState, IJob } from '@/types/index';
 import { useSelector } from 'react-redux';
 import * as R from 'ramda';
+import Pagination from 'react-js-pagination';
 
 interface IRootState {
   filter: IFilterState;
@@ -13,6 +14,9 @@ interface IRootState {
 
 const Jobs = () => {
   const filter = useSelector((state: IRootState) => state.filter);
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const jobsPerPage = 9;
 
   const compName = RegExp(`${filter.company_name}`, 'gi');
   const lction = RegExp(`${filter.location}`, 'gi');
@@ -173,6 +177,13 @@ const Jobs = () => {
     return filter.company_name.length > 0 || filter.location.length > 0 || filter.skills.length > 0;
   };
 
+  const indexOfLastJob = currentPage * jobsPerPage;
+  const indexOfFirstJob = indexOfLastJob - jobsPerPage;
+
+  const handlePaginationClick = number => {
+    setCurrentPage(number);
+  };
+
   return (
     <ListJobs>
       <ListHeader>
@@ -191,10 +202,20 @@ const Jobs = () => {
 
       {!checkIfIsFiltering() && (
         <ListStyled>
-          {jobs.map((job: IJob, index) => (
+          {jobs.slice(indexOfFirstJob, indexOfLastJob).map((job: IJob, index) => (
             <CardJob key={index} job={job} />
           ))}
         </ListStyled>
+      )}
+
+      {!checkIfIsFiltering() && (
+        <Pagination
+          activePage={currentPage}
+          itemsCountPerPage={jobsPerPage}
+          totalItemsCount={jobs.length}
+          pageRangeDisplayed={jobsPerPage}
+          onChange={handlePaginationClick}
+        />
       )}
     </ListJobs>
   );

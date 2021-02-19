@@ -232,9 +232,11 @@ const JobContainer = () => {
 
       <div className="similarJob">
         <h1 className="title">Similar Jobs</h1>
-        {similarJobs.slice(0, 5).map((job, index) => (
-          <CardJob key={index} job={job} />
-        ))}
+        <ul className="list">
+          {similarJobs.slice(0, 5).map((job, index) => (
+            <CardJob key={index} job={job} />
+          ))}
+        </ul>
       </div>
     </StyledContainer>
   );

@@ -19,10 +19,10 @@ const MarketContainer = () => {
     setAreas([...(new Set(findDuplicates(areasSaved)) as any)]);
   };
 
-  const getMostRequiredTools = () => {
+  const getMostRequiredTools = async () => {
     let toolsSaved: string[] = [];
 
-    jobs.map(job => {
+    await jobs.map(job => {
       toolsSaved.push(...job.required_skills);
     });
 

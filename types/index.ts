@@ -22,7 +22,7 @@ export interface IJob {
   markets: string;
   date: Date | string;
   isRemote: boolean;
-  level: string;
+  job_senerioty: string;
   experience_years: number;
   email: string;
   website: string;

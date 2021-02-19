@@ -3,6 +3,8 @@ import { CustomListFilter, ListItemsFilter } from './style';
 import { useDispatch } from 'react-redux';
 import { setFieldSeniority, setFieldJobType, setFieldSalary } from './../../store/actions/filter';
 import { printSalaryRange } from '@/utils/index';
+import jobs from '@/utils/jobs.json';
+import { useEffect } from 'react';
 
 const ListFilter = ({ title, items }: IListFilter) => {
   const dispatch = useDispatch();
@@ -20,6 +22,25 @@ const ListFilter = ({ title, items }: IListFilter) => {
       dispatch(setFieldSalary(value));
     }
   };
+
+  const getNumberOfJobsByValue = value => {
+    if (value === 'Remote') {
+      const result = jobs.filter(job => job.isRemote);
+      return result.length;
+    } else if (title === 'Job type') {
+      const result = jobs.filter(job => job.job_type === value);
+      return result.length;
+    } else if (title === 'Seniority') {
+      const result = jobs.filter(job => job.job_seniority === value);
+      return result.length;
+    } else if (title === 'Salary Range') {
+      const result = jobs.filter(job => JSON.stringify(job.salary_range) === JSON.stringify(value));
+      console.log(result);
+      return result.length;
+    }
+  };
+
+  useEffect(() => {}, []);
 
   return (
     <CustomListFilter>
@@ -39,7 +60,7 @@ const ListFilter = ({ title, items }: IListFilter) => {
                 {title === 'Salary Range' ? printSalaryRange(item) : item}
               </label>
             </div>
-            <span className="jobNumbers">50</span>
+            <span className="jobNumbers">{getNumberOfJobsByValue(item)}</span>
           </li>
         ))}
       </ListItemsFilter>

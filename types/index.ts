@@ -21,7 +21,6 @@ export interface IJob {
   salary_range: ISalary;
   markets: string;
   date: Date | string;
-  isRemote: boolean;
   job_seniority: string;
   experience_years: number;
   email: string;

@@ -20,7 +20,6 @@ const CardJob = ({ job }: { job: IJob }) => {
       </div>
 
       <ul className="items">
-        {job.isRemote && <li className="item">Remote</li>}
         {items.map((item, index) => (
           <li className="item" key={index}>
             {item}

@@ -10,7 +10,7 @@ import { Skeleton } from 'antd';
 import CardJob from '../jobs/cardJob';
 
 const JobContainer = () => {
-  const cels = ['Remote', 'Seniority Level', 'Job Type', 'Market', 'Salary Range'];
+  const cels = ['Seniority Level', 'Job Type', 'Market', 'Salary Range'];
 
   const [job, setJob] = useState<IJob>({
     company_name: '',
@@ -25,7 +25,6 @@ const JobContainer = () => {
     location: '',
     markets: '',
     overview: '',
-    isRemote: false,
     required_skills: [],
     salary_range: {
       to: 0,
@@ -58,11 +57,9 @@ const JobContainer = () => {
     website,
     experience_years,
     social_networks,
-    isRemote,
   } = job;
 
   const data = [
-    isRemote ? 'yes' : 'Not',
     job_seniority,
     job_type,
     markets,

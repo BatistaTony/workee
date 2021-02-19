@@ -1,4 +1,4 @@
-import { IFilterState, IJob } from '@/types/index';
+import * as R from 'ramda';
 
 function contains(a, b) {
   let counter = 0;
@@ -9,14 +9,11 @@ function contains(a, b) {
   return false;
 }
 
-export const isAllFilled = (filter: IFilterState) => {
+const isAllFilled = filter => {
   return filter.company_name && filter.location && filter.skills.length > 0;
 };
 
-export const filterWithAllFields = (job: IJob, filter: IFilterState) => {
-  const compName = RegExp(`${filter.company_name}`, 'gi');
-  const lction = RegExp(`${filter.location}`, 'gi');
-
+const filterWithAllFields = (job, lction, compName, filter) => {
   if (
     (job.location.match(lction) && job.job_title.match(compName)) ||
     job.company_name.match(compName)
@@ -28,37 +25,123 @@ export const filterWithAllFields = (job: IJob, filter: IFilterState) => {
   }
 };
 
-export const filterWithJobType = (job, filter) => {
-  const compName = RegExp(`${filter.company_name}`, 'gi');
-  const lction = RegExp(`${filter.location}`, 'gi');
-
-  if (isAllFilled(filter) && filter.job_type.includes(job.job_type)) {
-    filterWithAllFields(job, filter);
+export const filterJobs = (filter, job, compName, lction) => {
+  if (filter.job_type.length > 0) {
+    if (isAllFilled(filter) && filter.job_type.includes(job.job_type)) {
+      filterWithAllFields(job, lction, compName, filter);
+    } else if (
+      filter.company_name &&
+      filter.location &&
+      job.location.match(lction) &&
+      job.job_title.match(compName) &&
+      filter.job_type.includes(job.job_type)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.company_name.match(compName) &&
+      filter.job_type.includes(job.job_type)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.job_title.match(compName) &&
+      filter.job_type.includes(job.job_type)
+    ) {
+      return job;
+    } else if (
+      filter.location &&
+      job.location.match(lction) &&
+      filter.job_type.includes(job.job_type)
+    ) {
+      return job;
+    } else if (filter.skills.length) {
+      const skillJob = job.required_skills;
+      const filterSkill = filter.skills;
+      return contains(skillJob, filterSkill);
+    }
+  } else if (filter.job_seniority.length > 0) {
+    if (isAllFilled(filter) && filter.job_seniority.includes(job.job_seniority)) {
+      filterWithAllFields(job, lction, compName, filter);
+    } else if (
+      filter.company_name &&
+      filter.location &&
+      job.location.match(lction) &&
+      job.job_title.match(compName) &&
+      filter.job_seniority.includes(job.job_seniority)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.company_name.match(compName) &&
+      filter.job_seniority.includes(job.job_seniority)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.job_title.match(compName) &&
+      filter.job_seniority.includes(job.job_seniority)
+    ) {
+      return job;
+    } else if (
+      filter.location &&
+      job.location.match(lction) &&
+      filter.job_seniority.includes(job.job_seniority)
+    ) {
+      return job;
+    } else if (filter.skills.length) {
+      const skillJob = job.required_skills;
+      const filterSkill = filter.skills;
+      return contains(skillJob, filterSkill);
+    }
+  } else if (filter.salary_range.length > 0) {
+    if (isAllFilled(filter) && R.includes(job.salary_range, filter.salary_range)) {
+      filterWithAllFields(job, lction, compName, filter);
+    } else if (
+      filter.company_name &&
+      filter.location &&
+      job.location.match(lction) &&
+      job.job_title.match(compName) &&
+      R.includes(job.salary_range, filter.salary_range)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.company_name.match(compName) &&
+      R.includes(filter.salary_range, job.salary_range)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.job_title.match(compName) &&
+      R.includes(job.salary_range, filter.salary_range)
+    ) {
+      return job;
+    } else if (
+      filter.location &&
+      job.location.match(lction) &&
+      R.includes(job.salary_range, filter.salary_range)
+    ) {
+      return job;
+    } else if (filter.skills.length) {
+      const skillJob = job.required_skills;
+      const filterSkill = filter.skills;
+      return contains(skillJob, filterSkill);
+    }
+  } else if (isAllFilled(filter)) {
+    filterWithAllFields(job, lction, compName, filter);
   } else if (
     filter.company_name &&
     filter.location &&
     job.location.match(lction) &&
-    job.job_title.match(compName) &&
-    filter.job_type.includes(job.job_type)
+    job.job_title.match(compName)
   ) {
     return job;
-  } else if (
-    filter.company_name &&
-    job.company_name.match(compName) &&
-    filter.job_type.includes(job.job_type)
-  ) {
+  } else if (filter.company_name && job.company_name.match(compName)) {
     return job;
-  } else if (
-    filter.company_name &&
-    job.job_title.match(compName) &&
-    filter.job_type.includes(job.job_type)
-  ) {
+  } else if (filter.company_name && job.job_title.match(compName)) {
     return job;
-  } else if (
-    filter.location &&
-    job.location.match(lction) &&
-    filter.job_type.includes(job.job_type)
-  ) {
+  } else if (filter.location && job.location.match(lction)) {
     return job;
   } else if (filter.skills.length) {
     const skillJob = job.required_skills;

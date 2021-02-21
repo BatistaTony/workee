@@ -8,7 +8,7 @@ import Pagination from 'react-js-pagination';
 import { filterJobs } from './utils';
 import { useRouter } from 'next/router';
 import { useDispatch } from 'react-redux';
-import { setSimpeFilter } from './../../store/actions/filter';
+import { setSimpeFilter, clearStore } from './../../store/actions/filter';
 
 interface IRootState {
   filter: IFilterState;
@@ -44,14 +44,8 @@ const Jobs = () => {
   };
 
   useEffect(() => {
-    dispatch(
-      setSimpeFilter({
-        company_name: '',
-        location: '',
-        skills: [],
-      })
-    );
-  }, [router]);
+    dispatch(clearStore());
+  }, [router.pathname]);
 
   return (
     <ListJobs>

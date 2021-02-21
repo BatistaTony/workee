@@ -39,5 +39,5 @@ export interface IFilterState {
   job_type: string[];
   job_seniority: string[];
   salary_range: string[];
-  time: number;
+  market: string[];
 }

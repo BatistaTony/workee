@@ -128,6 +128,40 @@ export const filterJobs = (filter, job, compName, lction) => {
       const filterSkill = filter.skills;
       return contains(skillJob, filterSkill);
     }
+  } else if (filter.market.length > 0) {
+    if (isAllFilled(filter) && R.includes(job.markets, filter.market)) {
+      filterWithAllFields(job, lction, compName, filter);
+    } else if (
+      filter.company_name &&
+      filter.location &&
+      job.location.match(lction) &&
+      job.job_title.match(compName) &&
+      R.includes(job.markets, filter.market)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.company_name.match(compName) &&
+      R.includes(filter.market, job.markets)
+    ) {
+      return job;
+    } else if (
+      filter.company_name &&
+      job.job_title.match(compName) &&
+      R.includes(job.markets, filter.market)
+    ) {
+      return job;
+    } else if (
+      filter.location &&
+      job.location.match(lction) &&
+      R.includes(job.markets, filter.market)
+    ) {
+      return job;
+    } else if (filter.skills.length) {
+      const skillJob = job.required_skills;
+      const filterSkill = filter.skills;
+      return contains(skillJob, filterSkill);
+    }
   } else if (isAllFilled(filter)) {
     filterWithAllFields(job, lction, compName, filter);
   } else if (

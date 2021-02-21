@@ -13,7 +13,7 @@
       "to": 1500,
       "from": 2500
     },
-    "markets": "Platform Innovation",
+    "markets": "Software",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Entry Level",
     "experience_years": 7,
@@ -39,7 +39,7 @@
       "to": 2500,
       "from": 3500
     },
-    "markets": "Platform Innovation",
+    "markets": "Computer",
     "date": "Wed Feb 1 2021 19:16:44 GMT+0100",
     "job_seniority": "Entry Level",
     "experience_years": 2,
@@ -65,7 +65,7 @@
       "to": 1500,
       "from": 2500
     },
-    "markets": "Space",
+    "markets": "Agriculture",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
     "experience_years": 3,
@@ -91,7 +91,7 @@
       "to": 1500,
       "from": 2500
     },
-    "markets": "healthcare",
+    "markets": "Healthcare",
     "date": "Wed Feb 6 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 3,
@@ -143,7 +143,7 @@
       "to": 2500,
       "from": 3500
     },
-    "markets": "software",
+    "markets": "Software",
     "date": "Wed Jan 11 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
     "experience_years": 2,
@@ -169,7 +169,7 @@
       "to": 3500,
       "from": 4500
     },
-    "markets": "food",
+    "markets": "Food",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Senior Level",
     "experience_years": 3,
@@ -247,7 +247,7 @@
       "to": 3500,
       "from": 4500
     },
-    "markets": "healthcare",
+    "markets": "Healthcare",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 3,
@@ -273,7 +273,7 @@
       "to": 7500,
       "from": 10500
     },
-    "markets": "cars",
+    "markets": "Cars",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 10,
@@ -299,7 +299,7 @@
       "to": 7500,
       "from": 10500
     },
-    "markets": "cars",
+    "markets": "Agriculture",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 10,
@@ -325,7 +325,7 @@
       "to": 7500,
       "from": 10500
     },
-    "markets": "cars",
+    "markets": "Cars",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Student Level",
     "experience_years": 10,
@@ -351,7 +351,7 @@
       "to": 7500,
       "from": 10500
     },
-    "markets": "cars",
+    "markets": "Cars",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 10,
@@ -377,7 +377,7 @@
       "to": 7500,
       "from": 10500
     },
-    "markets": "cars",
+    "markets": "Cars",
     "date": "Wed Feb 17 2021 19:16:44 GMT+0100",
     "job_seniority": "Mid Level",
     "experience_years": 10,

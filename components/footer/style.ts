@@ -18,7 +18,7 @@ export const FooterStyled = styled.div`
   }
 
   p {
-    font-size: 13pt;
+    font-size: 11.5pt;
     ${addFont()};
     color: white;
     margin: 0;
@@ -29,11 +29,11 @@ export const FooterStyled = styled.div`
     }
 
     @media (min-width: 1600px) {
-      font-size: 15pt;
+      font-size: 13.5pt;
     }
 
     @media (min-width: 2100px) {
-      font-size: 17pt;
+      font-size: 15pt;
     }
   }
 `;

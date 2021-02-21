@@ -1,7 +1,12 @@
 import { IListFilter, ISalary } from '@/types/index';
 import { CustomListFilter, ListItemsFilter } from './style';
 import { useDispatch } from 'react-redux';
-import { setFieldSeniority, setFieldJobType, setFieldSalary } from './../../store/actions/filter';
+import {
+  setFieldSeniority,
+  setFieldJobType,
+  setFieldSalary,
+  setFieldMarket,
+} from './../../store/actions/filter';
 import { printSalaryRange } from '@/utils/index';
 import jobs from '@/utils/jobs.json';
 import { useEffect } from 'react';
@@ -21,6 +26,10 @@ const ListFilter = ({ title, items }: IListFilter) => {
     if (title === 'Salary Range') {
       dispatch(setFieldSalary(value));
     }
+
+    if (title === 'Markets') {
+      dispatch(setFieldMarket(value));
+    }
   };
 
   const getNumberOfJobsByValue = value => {
@@ -32,6 +41,10 @@ const ListFilter = ({ title, items }: IListFilter) => {
       return result.length;
     } else if (title === 'Salary Range') {
       const result = jobs.filter(job => JSON.stringify(job.salary_range) === JSON.stringify(value));
+      return result.length;
+    }
+    if (title === 'Markets') {
+      const result = jobs.filter(job => JSON.stringify(job.markets) === JSON.stringify(value));
       return result.length;
     }
   };

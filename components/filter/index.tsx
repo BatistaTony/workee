@@ -16,12 +16,24 @@ const Filter = ({ isMobile }: IFilter) => {
     { to: 6500, from: 7500 },
     { to: 7500, from: 10500 },
   ];
+  const markets = [
+    'Sells',
+    'Cars',
+    'Software',
+    'Computer',
+    'Consultant',
+    'Healthcare',
+    'Television',
+    'Agriculture',
+    'Food',
+  ];
 
   return (
     <CustomFilter isMobile={isMobile}>
       <ListFilter title="Job type" items={jobTypes} />
       <ListFilter title="Seniority" items={seniorityLevel} />
       <ListFilter title="Salary Range" items={salaries_range} />
+      <ListFilter title="Markets" items={markets} />
     </CustomFilter>
   );
 };

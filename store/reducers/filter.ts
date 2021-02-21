@@ -4,7 +4,7 @@ import {
   SET_FIELD_SENIORITY,
   SET_JOB_TYPE,
   SET_FIELD_SALARY,
-  SET_FIELD_TIME,
+  SET_FIELD_MARKET,
 } from './../actions/filter';
 
 const initialState: IFilterState = {
@@ -14,7 +14,7 @@ const initialState: IFilterState = {
   job_type: [],
   job_seniority: [],
   salary_range: [],
-  time: 20,
+  market: [],
 };
 
 interface IAction {
@@ -44,6 +44,11 @@ const filter = (state = initialState, action: IAction) => {
           job_type: [...state.job_type, action.payload],
         };
       }
+    }
+
+    case 'CLEAR': {
+      console.log('clear');
+      return { ...initialState };
     }
 
     case SET_FIELD_SENIORITY: {
@@ -82,11 +87,22 @@ const filter = (state = initialState, action: IAction) => {
       }
     }
 
-    case SET_FIELD_TIME: {
-      return {
-        ...state,
-        time: action.payload,
-      };
+    case SET_FIELD_MARKET: {
+      const oldMarket: string[] | any = state.market;
+
+      if (oldMarket.includes(action.payload)) {
+        const newMArket = state.market.filter(item => item !== action.payload);
+
+        return {
+          ...state,
+          market: [...newMArket],
+        };
+      } else {
+        return {
+          ...state,
+          market: [...state.market, action.payload],
+        };
+      }
     }
 
     default: {

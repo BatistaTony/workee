@@ -181,11 +181,7 @@ const JobContainer = () => {
           <p className="text">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, fugiat quidem! Facere
             laudantium ad omnis? Dolore
-            {email && (
-              <a href={email}>
-                <span className="email"> {email} </span>
-              </a>
-            )}
+            {email && <span className="email"> {email} </span>}
             excepturi delectus, a neque sunt vitae. Iure perspiciatis omnis commodi doloremque, enim
             asperiores quasi.
           </p>

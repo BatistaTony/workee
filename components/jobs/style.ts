@@ -19,6 +19,7 @@ export const ListJobs = styled.div`
     ${addFlexbox('row', 'center', 'center')};
     list-style: none;
     padding-bottom: 5%;
+    margin-top: 30px;
 
     li {
       margin-right: 30px;
@@ -114,7 +115,7 @@ export const ListHeader = styled.div`
 
 export const ListStyled = styled.div`
   width: 100%;
-  height: 100%;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 30%);
   justify-content: space-between;
@@ -151,7 +152,7 @@ export const CardStyled = styled(motion.div)`
   height: 270px;
   border-radius: 5px;
   background: ${colors.navbar};
-  margin-bottom: 10px;
+  margin-bottom: 40px;
   box-sizing: border-box;
   padding: 15px;
   position: relative;

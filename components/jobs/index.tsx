@@ -1,12 +1,14 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ListJobs, ListHeader, ListStyled } from './style';
 import jobs from '@/utils/jobs.json';
 import CardJob from './cardJob';
 import { IFilterState, IJob } from '@/types/index';
 import { useSelector } from 'react-redux';
-import * as R from 'ramda';
 import Pagination from 'react-js-pagination';
 import { filterJobs } from './utils';
+import { useRouter } from 'next/router';
+import { useDispatch } from 'react-redux';
+import { setSimpeFilter, clearStore } from './../../store/actions/filter';
 
 interface IRootState {
   filter: IFilterState;
@@ -19,12 +21,12 @@ const Jobs = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const jobsPerPage = 9;
 
+  const dispatch = useDispatch();
+
   const compName = RegExp(`${filter.company_name}`, 'gi');
   const lction = RegExp(`${filter.location}`, 'gi');
 
-  const [jobsState, setJobsState] = useState(jobs);
-
-  const filteredJobs = jobsState.filter((job, index) => {
+  const filteredJobs = jobs.filter((job, index) => {
     return filterJobs(filter, job, compName, lction);
   });
 
@@ -35,9 +37,15 @@ const Jobs = () => {
   const indexOfLastJob = currentPage * jobsPerPage;
   const indexOfFirstJob = indexOfLastJob - jobsPerPage;
 
+  const router = useRouter();
+
   const handlePaginationClick = number => {
     setCurrentPage(number);
   };
+
+  useEffect(() => {
+    dispatch(clearStore());
+  }, [router.pathname]);
 
   return (
     <ListJobs>

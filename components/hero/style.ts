@@ -1,6 +1,6 @@
 import { addFlexbox, addFont } from '@/utils/index';
 import colors from '@/utils/colors';
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 
 export const CustomHero = styled.div`
   width: 100%;
@@ -133,6 +133,16 @@ export const LeftContent = styled.div`
   }
 `;
 
+const MoveUpDown = keyframes`
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-7px);
+  }
+
+`;
+
 export const RightContent = styled.div`
   height: 100%;
   ${addFlexbox('row', 'flex-end', 'flex-end')};
@@ -146,6 +156,7 @@ export const RightContent = styled.div`
     width: 400px;
     height: 400px;
     margin: 10%;
+    animation: ${MoveUpDown} 3s infinite;
 
     @media (min-width: 1400px) {
       width: 500px;
